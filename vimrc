@@ -51,3 +51,5 @@ let g:lightline = {
       \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },
       \ }
 
+" gitgutter settings
+let g:gitgutter_sign_column_always=1
