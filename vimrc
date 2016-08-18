@@ -30,3 +30,7 @@ set autoindent
 " Highlight found words in search
 set hlsearch
 nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
+
+" Command-T settings
+" Reindex with <Leader>+r
+noremap <Leader>r :CommandTFlush<CR>
