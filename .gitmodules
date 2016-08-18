@@ -7,3 +7,6 @@
 [submodule "bundle/lightline.vim"]
 	path = bundle/lightline.vim
 	url = git@github.com:itchyny/lightline.vim.git
+[submodule "fonts/powerline"]
+	path = fonts/powerline
+	url = git@github.com:powerline/fonts.git
