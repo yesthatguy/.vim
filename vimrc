@@ -11,7 +11,11 @@ syntax on
 colorscheme Tomorrow-Night-Eighties
 set showmatch  " Matching parenthesis
 
-set lines=45 columns=90
+if has("gui_running")
+  " GUI is running or is about to start.
+  set lines=45 columns=90
+endif
+
 set colorcolumn=80
 
 set number
