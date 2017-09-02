@@ -4,6 +4,9 @@ execute pathogen#infect()
 " Reload this file with <Leader>+s
 map <Leader>s :source ~/.vim/vimrc<CR>
 
+" Make arrow keys work in vim
+set nocompatible
+
 " Enable syntax highlighting and theme
 " http://marcgg.com/blog/2016/03/01/vimrc-example/
 filetype on
@@ -34,9 +37,15 @@ set expandtab
 set smartindent
 set autoindent
 
+" Backspaces
+set backspace=indent,eol,start
+
 " Highlight found words in search
 set hlsearch
-nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
+nnoremap <esc> :nohlsearch<Bar>:echo<CR>
+" Avoid weird behavior with escape
+" https://stackoverflow.com/a/1037182
+nnoremap <esc>^[ <esc>^[
 
 " Command-T settings
 " Reindex with <Leader>+r
