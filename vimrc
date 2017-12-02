@@ -78,6 +78,7 @@ function StartNerdTreeIfDir()
     set columns=190
     wincmd p
     ene
+    vs
   endif
 endfunction
 " Quit when the only window left is a NERDTree
