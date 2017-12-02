@@ -53,7 +53,9 @@ noremap <Leader>r :CommandTFlush<CR>
 
 " lightline settings
 " See https://github.com/itchyny/lightline.vim for info about powerline fonts
-set guifont=Droid\ Sans\ Mono\ for\ Powerline:h11
+" set guifont=Droid\ Sans\ Mono\ for\ Powerline:h11
+"set guifont=DroidSansMono\ Nerd\ Font\ Complete:h11
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete:h11
 set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'wombat',
@@ -66,3 +68,17 @@ let g:lightline = {
 
 " gitgutter settings
 let g:gitgutter_sign_column_always=1
+
+" NERDTree automatically starts for directories in gvim mode
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * call StartNerdTreeIfDir()
+function StartNerdTreeIfDir()
+  if has("gui_running") && argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in")
+    exe 'NERDTree' argv()[0]
+    set columns=190
+    wincmd p
+    ene
+  endif
+endfunction
+" Quit when the only window left is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
