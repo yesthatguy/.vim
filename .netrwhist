@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/salomaki/.config'
 let g:netrw_dirhist_2='/Users/salomaki/.oh-my-zsh'
+let g:netrw_dirhist_3='/Users/salomaki/.vim/bundle/vim-preview'
+let g:netrw_dirhist_4='/Users/salomaki/.vim/bundle/vim-preview/autoload'
