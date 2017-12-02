@@ -1,6 +1,6 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
-	url = git@github.com:wincent/command-t.git
+	url = https://github.com/wincent/command-t.git
 [submodule "bundle/lightline.vim"]
 	path = bundle/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
@@ -9,16 +9,16 @@
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = git@github.com:ervandew/supertab.git
+	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/vim-devicons"]
 	path = bundle/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
-	url = git@github.com:airblade/vim-gitgutter.git
+	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "bundle/vim-preview"]
 	path = bundle/vim-preview
 	url = https://github.com/yesthatguy/vim-preview.git

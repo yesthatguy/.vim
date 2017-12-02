@@ -67,7 +67,7 @@ let g:lightline = {
       \ }
 
 " gitgutter settings
-let g:gitgutter_sign_column_always=1
+set signcolumn=yes
 
 " NERDTree automatically starts for directories in gvim mode
 autocmd StdinReadPre * let s:std_in=1
