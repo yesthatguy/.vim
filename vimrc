@@ -75,7 +75,7 @@ autocmd VimEnter * call StartNerdTreeIfDir()
 function StartNerdTreeIfDir()
   if has("gui_running") && argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in")
     exe 'NERDTree' argv()[0]
-    set columns=190
+    set columns=200 " 85 each for two buffers + 30 for NERDTree
     wincmd p
     ene
     vs
@@ -83,3 +83,6 @@ function StartNerdTreeIfDir()
 endfunction
 " Quit when the only window left is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" vim-nerdtree-syntax-highlight
+let g:NERDTreeLimitedSyntax = 1
