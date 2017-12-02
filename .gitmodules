@@ -25,3 +25,6 @@
 [submodule "bundle/vim-rdoc"]
 	path = bundle/vim-rdoc
 	url = https://github.com/hallison/vim-rdoc
+[submodule "bundle/vim-nerdtree-syntax-highlight"]
+	path = bundle/vim-nerdtree-syntax-highlight
+	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git
