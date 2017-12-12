@@ -28,3 +28,6 @@
 [submodule "bundle/vim-nerdtree-syntax-highlight"]
 	path = bundle/vim-nerdtree-syntax-highlight
 	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git
+[submodule "bundle/vim-i18n"]
+	path = bundle/vim-i18n
+	url = git://github.com/stefanoverna/vim-i18n.git
