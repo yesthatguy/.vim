@@ -40,6 +40,9 @@ set autoindent
 " Backspaces
 set backspace=indent,eol,start
 
+" Show partial matches when typing in a search
+set incsearch
+
 " Highlight found words in search
 set hlsearch
 nnoremap <esc> :nohlsearch<Bar>:echo<CR>
