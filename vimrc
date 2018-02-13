@@ -31,7 +31,7 @@ set history=200
 " Indenting logic
 filetype indent on
 set nowrap
-set tabstop=4
+set tabstop=2
 set shiftwidth=2
 set expandtab
 set smartindent
